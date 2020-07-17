@@ -24,7 +24,7 @@ from labelme import utils
 import imgviz
 from tensorflow import keras
 from layers import pyramid_pooling, bottleneck
-
+from virtual_data import get_train_data
 class SCNN:
     def __init__(self, train_stage=1,use_cpu=False, print_summary=False):
         self.build(use_cpu=use_cpu, print_summary=print_summary)
