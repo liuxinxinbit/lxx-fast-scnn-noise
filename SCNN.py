@@ -10,7 +10,6 @@ from tensorflow.keras.layers import LeakyReLU
 import os
 import random
 import time
-import wget
 import tarfile
 import numpy as np
 import cv2
