@@ -48,7 +48,7 @@ class SCNN:
         return score              
     def train(self, epochs=10, steps_per_epoch=50,batch_size=32):
         batch_generator = self.BatchGenerator(batch_size=batch_size)
-        self.model.fit_generator(batch_generator, steps_per_epoch=steps_per_epoch, epochs=epochs)
+        self.model.fit(batch_generator, steps_per_epoch=steps_per_epoch, epochs=epochs)
 
     def build_conv2D_block(self, inputs, filters, kernel_size, strides):
         conv2d = Conv2D(filters = filters, kernel_size=kernel_size,strides=strides, padding='same', use_bias=True,bias_initializer='zeros')(inputs)

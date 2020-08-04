@@ -12,8 +12,8 @@ from virtual_data import get_train_data
 
 
 scnn = SCNN()
-# scnn.load()
-# scnn.train(epochs=10, steps_per_epoch=500, batch_size=12)
+scnn.load()
+scnn.train(epochs=10, steps_per_epoch=500, batch_size=12)
 # scnn.save()
 
 
